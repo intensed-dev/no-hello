@@ -29,7 +29,7 @@
   --sans: "DM Sans", DM Sans, Inter, "Inter", BlinkMacFont, apple-system, system-ui, sans-serif;
   --serif: "Merriweather", Merriweather, Georgia, serif;
 
-  --muted: var(--cloud-medium);
+  --muted: var(--slate-medium);
   --text: var(--slate-dark);
   --bg-1: var(--ivory-medium);
 }
@@ -59,4 +59,18 @@ main {
 }
 .sans {
   font-family: var(--sans);
+}
+
+.muted {
+  color: var(--muted);
+}
+hr {
+  background-color: var(--muted);
+}
+
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
 }

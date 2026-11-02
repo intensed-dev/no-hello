@@ -12,7 +12,12 @@
     <main>
         <header>
             <a href="./" class="wordmark">no<span>hello</span></a>
-            <p class="eyebrow">A tiny guide to better conversations</p>
+            <label class="language-picker">
+                <span class="visually-hidden">Language</span>
+                <select aria-label="Language">
+                    <option value="en" selected>English (US)</option>
+                </select>
+            </label>
         </header>
 
         <section class="intro">
@@ -24,7 +29,7 @@
         <section>
             <h2>The problem with “Hello”</h2>
             <p>You open a chat, type “Hello” and send it. Then you wait for the other person to reply before you explain why you reached out.</p>
-            <p>That creates an unnecessary extra step. The other person has to stop what they're doing, open the conversation and reply — only to find out that the actual message is still coming.</p>
+            <p>That creates an unnecessary extra step. The other person has to stop what they're doing, open the conversation and reply — only to find out that the actual message is still coming. Then you have to wait again for an answer to your real question. This back-and-forth makes the whole conversation take longer than it needs to.</p>
             <aside class="callout">
                 <strong>A greeting is fine.</strong>
                 <p>The problem is sending a greeting <em>on its own</em> when you already know what you want to ask.</p>
@@ -50,7 +55,7 @@
                         <span>You</span>
                         I wanted to ask about the project...
                     </div>
-                    <p class="example-note">Three messages just to get to the question.</p>
+                    <p class="example-note">Three messages just to get to the question — and an extra wait in between.</p>
                 </article>
 
                 <article class="example better">
@@ -59,7 +64,7 @@
                         <span>You</span>
                         Hey Alex! I'm working on the project and had a question: which version should I use?
                     </div>
-                    <p class="example-note">One message. All the context. Nothing to wait for.</p>
+                    <p class="example-note">One message. All the context. Nothing to wait for before answering.</p>
                 </article>
             </div>
         </section>

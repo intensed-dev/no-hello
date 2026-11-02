@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-
 .dm-sans-<uniquifier> {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
-
-
 .merriweather-<uniquifier> {
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
@@ -18,8 +15,20 @@
 }
 
 :root {
-  --radius-sm: 4px;
-  --radius-lg: 8px;
+  --radius-sm: 8px;
+  --radius-lg: 12px;
+  --accent: #d97757;
+  --accent-darker: #c6613f;
+  --slate-dark: #141413;
+  --slate-medium: #3d3d3a;
+  --cloud-dark: #87867f;
+  --cloud-medium: #b0aea5;
+  --ivory-medium: #f0eee6;
+  --ivory-light: #faf9f5;
+
+  --muted: var(--cloud-medium);
+  --text: var(--slate-dark);
+  --bg-1: var(--ivory-medium);
 }
 
 body, html {
@@ -29,6 +38,8 @@ body, html {
 
 body {
   font-family: "DM Sans", "Merriweather", sans-serif;
+  color: var(--text);
+  background-color: var(--bg-1);
 }
 
 main {

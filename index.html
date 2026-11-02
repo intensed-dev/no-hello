@@ -14,8 +14,19 @@
             <a href="./" class="wordmark">no<span>hello</span></a>
             <label class="language-picker">
                 <span class="visually-hidden">Language</span>
-                <select aria-label="Language">
-                    <option value="en" selected>English (US)</option>
+                <select aria-label="Language" onchange="if (this.value) window.location.href = this.value;">
+                    <option value="./en/" selected>English (US)</option>
+                    <option value="./en-gb/">English (UK)</option>
+                    <option value="./de/">Deutsch</option>
+                    <option value="./fr/">Français</option>
+                    <option value="./ru/">Русский</option>
+                    <option value="./zh/">中文（简体）</option>
+                    <option value="./es/">Español</option>
+                    <option value="./it/">Italiano</option>
+                    <option value="./pt/">Português (Brasil)</option>
+                    <option value="./ja/">日本語</option>
+                    <option value="./nl/">Nederlands</option>
+                    <option value="./pl/">Polski</option>
                 </select>
             </label>
         </header>
@@ -39,31 +50,17 @@
         <section>
             <h2>Give the context right away</h2>
             <p>Instead of splitting one conversation into multiple messages, send the greeting, context and question together. The recipient can read everything and respond when they're available.</p>
-
             <div class="examples">
                 <article class="example">
                     <p class="example-label">THE SLOW WAY</p>
-                    <div class="message">
-                        <span>You</span>
-                        Hello!
-                    </div>
-                    <div class="message reply">
-                        <span>Alex</span>
-                        Hey, what's up?
-                    </div>
-                    <div class="message">
-                        <span>You</span>
-                        I wanted to ask about the project...
-                    </div>
+                    <div class="message"><span>You</span>Hello!</div>
+                    <div class="message reply"><span>Alex</span>Hey, what's up?</div>
+                    <div class="message"><span>You</span>I wanted to ask about the project...</div>
                     <p class="example-note">Three messages just to get to the question — and an extra wait in between.</p>
                 </article>
-
                 <article class="example better">
                     <p class="example-label">THE BETTER WAY</p>
-                    <div class="message">
-                        <span>You</span>
-                        Hey Alex! I'm working on the project and had a question: which version should I use?
-                    </div>
+                    <div class="message"><span>You</span>Hey Alex! I'm working on the project and had a question: which version should I use?</div>
                     <p class="example-note">One message. All the context. Nothing to wait for before answering.</p>
                 </article>
             </div>

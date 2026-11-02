@@ -74,3 +74,11 @@ hr {
 .italic {
   font-style: italic;
 }
+
+.btn {
+  background-color: var(--accent-darker);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  display: block;
+}

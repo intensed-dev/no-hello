@@ -67,6 +67,8 @@ main {
 hr {
   background-color: var(--muted);
   color: var(--muted);
+  height: 1px;
+  border: 0;
 }
 
 .bold {
@@ -79,6 +81,7 @@ hr {
 .btn {
   background-color: var(--accent-darker);
   padding: 4px 8px;
+  margin: 8px;
   border-radius: var(--radius-sm);
   text-align: center;
   display: block;

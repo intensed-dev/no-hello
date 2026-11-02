@@ -26,6 +26,9 @@
   --ivory-medium: #f0eee6;
   --ivory-light: #faf9f5;
 
+  --sans: "DM Sans", DM Sans, Inter, "Inter", BlinkMacFont, apple-system, system-ui, sans-serif;
+  --serif: "Merriweather", Merriweather, Georgia, serif;
+
   --muted: var(--cloud-medium);
   --text: var(--slate-dark);
   --bg-1: var(--ivory-medium);
@@ -37,7 +40,7 @@ body, html {
 }
 
 body {
-  font-family: "DM Sans", "Merriweather", sans-serif;
+  font-family: var(--serif);
   color: var(--text);
   background-color: var(--bg-1);
 }
@@ -49,4 +52,11 @@ body.dark {
 main {
   max-width: 700px;
   padding: 20px;
+}
+
+.serif {
+  font-family: var(--serif);
+}
+.sans {
+  font-family: var(--sans);
 }
